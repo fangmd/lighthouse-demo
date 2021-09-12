@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "outDir": "dist/lib",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__",
+    "**/*.spec.ts",
+  ]
+}

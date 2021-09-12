@@ -1,0 +1,40 @@
+{
+	"name": "lighthouse-demo",
+	"version": "1.0.0",
+	"description": "> TODO: description",
+	"author": "fangmingdong <fangmingdong@58.com>",
+	"homepage": "https://github.com/fangmd/js-lib#readme",
+	"main": "dist/lib/index.js",
+	"module": "dist/lib/index.js",
+	"typings": "dist/lib/index.d.ts",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"start": "webpack serve --open --config ./webpack.config.js --mode development --hot",
+		"build": "webpack --config ./webpack.config.js --mode production",
+		"prebuild": "rimraf dist",
+		"postbuild": "tsc",
+		"dev": "ts-node ./src/index.ts"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.8",
+		"@babel/plugin-transform-runtime": "^7.14.5",
+		"@babel/preset-env": "^7.14.8",
+		"@babel/preset-typescript": "^7.14.5",
+		"@babel/runtime": "^7.14.8",
+		"babel-loader": "^8.2.2",
+		"html-webpack-plugin": "^5.3.2",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.2.1",
+		"typescript": "^4.4.2",
+		"webpack": "^5.52.1",
+		"webpack-cli": "^4.8.0",
+		"webpack-dev-server": "^4.2.0"
+	},
+	"dependencies": {
+		"chrome-launcher": "^0.14.0",
+		"lighthouse": "^8.4.0"
+	}
+}
